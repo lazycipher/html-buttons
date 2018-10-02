@@ -6,7 +6,7 @@ Aim is to have a collections of buttons of different designs.
 ### What you need to do ?
 
 * Create a Folder with your name
-* Add a html file with multiple buttons having different designes.
+* Add a html file with multiple buttons having different designes. **Be Creative**
 
 ### How do I do that ?
 
