@@ -1,0 +1,31 @@
+body {
+  padding: 20px;
+}
+.button {
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: salmon;
+  border: none;
+}
+
+#btn {
+  margin-top: 20px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  border: none;
+  border-radius: 10px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#btn:hover {
+    background-color:  #00CCCC;
+    color: white;
+}
+
+button:hover {
+  background: lightsalmon;
+}

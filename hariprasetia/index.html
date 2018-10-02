@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+<body>
+
+<button class="button" onclick="button()">Clik me</button>
+
+<script>
+    function button() {
+        var createButton = document.createElement("BUTTON");
+        var buttonText = document.createTextNode("Button");
+        createButton.setAttribute("id", "btn");
+        createButton.appendChild(buttonText);
+        document.body.appendChild(createButton);
+    }
+</script>
+
+</body>
+</html>
