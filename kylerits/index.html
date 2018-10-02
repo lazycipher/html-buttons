@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>html-buttons ~ kylerits</title>
+    <meta name="description" content="Hacktoberfest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./main.css">
+  </head>
+
+  <body>
+
+    <div class="body-wrap">
+      <div class="body-grid">
+
+        <div class="header">
+          <h1>html-buttons</h1>
+          <p>Check out my Github at - <a href="https://github.com/kylerits">kylerits</a></p>
+        </div>
+        
+        <div class="content">
+
+          <div class="buttons-list">
+          
+            <div class="button-item">
+              
+              <div class="button-wrap">
+                <button class="button outline-shadow"><span>Sample</span></button>
+              </div>
+
+              <div class="button-code">
+                <div class="button-html">
+                  
+                  <code>
+                    &lt;button class="button outline-shadow"&gt;&lt;span&gt;Sample&lt;/span&gt;&lt;/button&gt;
+                  </code>
+                  
+                </div>
+
+                <div class="button-css">
+                  <code>
+                      <div>
+                        .outline-shadow {<br/>
+                          position: relative;<br/>
+                          font-weight: 600;<br/>
+                          text-transform: uppercase;<br/>
+                          font-style: italic;<br/>
+                          letter-spacing: 1px;<br/>
+                          border: solid 2px #4faef2;<br/>
+                          color: #4faef2;<br/>
+                          box-shadow: 0 4px 0 0 #4faef2;<br/>
+                          overflow: hidden;<br/>
+                        }
+                      </div>
+                      
+                      <div>
+                        .outline-shadow span {<br/>
+                          position: relative;<br/>
+                          z-index: 2;<br/>
+                        }
+                      </div>
+                      
+                      <div>
+                        .outline-shadow::after {<br/>
+                          content: '';<br/>
+                          position: absolute;<br/>
+                          top: 50%;<br/>
+                          left: 50%;<br/>
+                          transform: translate(-50%, -50%);<br/>
+                          background: #85dafc;<br/>
+                          opacity: 0.1;<br/>
+                          border-radius: 50%;<br/>
+                          width: 0;<br/>
+                          height: 0;<br/>
+                          transition: all 400ms;<br/>
+                        }
+                      </div>
+                      
+                      <div>
+                        .outline-shadow:hover:after {<br/>
+                          width: 12rem;<br/>
+                          height: 12rem;<br/>
+                        }
+                      </div>
+                      
+                      <div>
+                        .outline-shadow:active {<br/>
+                          margin-top: 4px;<br/>
+                          box-shadow: 0 0 0 0 #4faef2;<br/>
+                        }
+                      </div>
+                  </code>
+                </div>
+              </div>
+            </div>
+           
+            <div class="button-item">
+              
+              <div class="button-wrap">
+                <button class="button three-d"><span class="top">Sample</span><span class="bottom">Sample</span></button>
+              </div>
+
+              <div class="button-code">
+                <div class="button-html">
+                  
+                  <code>
+                      &lt;button class="button three-d"&gt;&lt;span class="top"&gt;Sample&lt;/span&gt;&lt;span class="bottom"&gt;Sample&lt;/span&gt;&lt;/button&gt;
+                  </code>
+                  
+                </div>
+
+                <div class="button-css">
+                  <code>
+                      <div>
+                          .three-d {<br/>
+                            position: relative;<br/>
+                            font-weight: 600;<br/>
+                            text-transform: uppercase;<br/>
+                            font-style: italic;<br/>
+                            letter-spacing: 1px;<br/>
+                            transform: translate(4px, -2px);<br/>
+                            transition: all 400ms;<br/>
+                          }
+                      </div>
+                      <div>
+                          .three-d:hover {<br/>
+                            transform: translate(0, 0);<br/>
+                          }
+                      </div>
+                      <div>
+                          .three-d .top {<br/>
+                            color: #85dafc;<br/>
+                            opacity: 0.7;<br/>
+                          }
+                      </div>
+                      <div>
+                          .three-d .bottom {<br/>
+                            position: absolute;<br/>
+                            top: 55%;<br/>
+                            left: 45%;<br/>
+                            transform: translate(-50%, -50%);<br/>
+                            color: #f97085;<br/>
+                            opacity: 0.7;<br/>
+                            transition: all 400ms;<br/>
+                          }
+                      </div>
+                      <div>
+                          .three-d::before {<br/>
+                            content: '';<br/>
+                            position: absolute;<br/>
+                            top: 0;<br/>
+                            left: 0;<br/>
+                            display: block;<br/>
+                            width: 100%;<br/>
+                            height: 100%;<br/>
+                            border: solid 2px #85dafc;<br/>
+                            opacity: 0.7;<br/>
+                          }
+                      </div>
+                      <div>
+                          .three-d::after {<br/>
+                            content: '';<br/>
+                            position: absolute;<br/>
+                            top: 5%;<br/>
+                            left: -5%;<br/>
+                            display: block;<br/>
+                            width: 100%;<br/>
+                            height: 100%;<br/>
+                            border: solid 2px #f97085;<br/>
+                            opacity: 0.7;<br/>
+                            transition: all 400ms;<br/>
+                          }
+                      </div>
+                      <div>
+                          .three-d:hover .bottom {<br/>
+                            top: 50%;<br/>
+                            left: 50%;<br/>
+                          }
+                      </div>
+                      <div>
+                          .three-d:hover::after {<br/>
+                            top: 0;<br/>
+                            left: 0;<br/>
+                          }
+                      </div>
+                  </code>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    
+    <script src="./main.js" async defer></script>
+  </body>
+</html>
