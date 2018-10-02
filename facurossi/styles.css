@@ -1,0 +1,71 @@
+body {
+    background-color: #e0e0e0;
+}
+.main {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-wrapper {
+    margin: 20px;
+    width: 150px;
+}
+
+.success-btn {
+    border: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0px;
+    outline: none;
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: rgb(49, 78, 148);
+    text-align: center;
+}
+
+.cancel-btn {
+    border: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0px;
+    outline: none;
+    height: 36px;
+    line-height: 36px;
+    width: 100%;
+    border-radius: 2px;
+    background-color: #fafafa;
+    text-align: center;
+}
+
+.success-btn:hover {
+    background-color: rgb(86, 73, 189, 0.75);
+}
+
+.cancel-btn:hover {
+    background-color: rgba(204, 69, 69, 0.87);
+}
+
+
+.cancel-span {
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    user-select: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: black;
+}
+
+.success-span {
+    font-size: 14px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    user-select: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: rgb(255, 255, 255);
+}
