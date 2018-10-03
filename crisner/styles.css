@@ -1,0 +1,54 @@
+.btn-style-1 {
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    width: 10em;
+    max-width: 100%;
+    padding: 1.6em;
+    margin: 2em;
+    border-radius: 0.2em;
+    border: 2px solid rgb(185, 238, 27);
+    background-color: #AEEA00;
+    box-shadow: 0 2px 0 rgb(125, 167, 1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-style-1:hover {
+    color: white;
+    background-color: rgb(147, 196, 1);
+    border: 2px solid rgb(147, 196, 1);
+    border-radius: 4em;
+    box-shadow: 0 -1px 0 rgb(169, 224, 4),
+                0 2px 0 rgb(125, 167, 1);
+    transition: all 0.2s ease-in-out;
+}
+
+.btn-style-2 {
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    width: 10em;
+    max-width: 100%;
+    margin: 2em;
+    color: white;
+    padding: 1em 1.6em;
+    border-radius: 0.6em;
+    background-color: rgb(161, 214, 3);
+    border: 1px solid rgba(169, 224, 4, 0.603);
+    box-shadow: inset 0px 0px 5px 0px rgb(171, 228, 2),
+                -1px -1px 0 rgb(169, 224, 4),
+                1px 0 0 rgb(169, 224, 4),
+                0 2px 0 rgb(125, 167, 1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-style-2:hover {
+    background-color: rgb(147, 196, 1);
+    box-shadow: inset 0px 0px 8px 0px rgb(119, 158, 2),
+                -1px -1px 0 rgb(169, 224, 4),
+                1px 0 0 rgb(169, 224, 4),
+                0 2px 0 rgb(125, 167, 1);
+    transition: all 0.2s ease-in-out;
+}
