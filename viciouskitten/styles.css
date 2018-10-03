@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3DF79;
+    margin: 0;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ button {
+    background: black;
+    border: none;
+    color: white;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.4s ease-out all;
+    overflow: hidden;
+    font-family: 'Raleway', sans-serif;
+ }
+ 
+button:focus { 
+    outline: none; 
+}
+
+.button1 {
+    position: relative;
+}
+
+.button1::before,
+.button1::after {
+    position: absolute;
+}
+
+ .button1::before {
+    content: "";
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #cc0077;
+    transition: 0.3s cubic-bezier(1, 0.26, 0.53, 0.4);
+}
+
+.button1::after {
+    content: attr(data-text);
+    top: 100%;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    transition: 0.3s cubic-bezier(1, 0.26, 0.53, 0.4);
+ }
+
+ .button1:hover::before,
+ .button1:focus::before {
+    left: 0;
+}
+
+.button1:hover::after,
+.button1:focus::after {
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.button2 {
+    position: relative;
+}
+
+.button2 span {
+    z-index: 1;
+    position: relative;
+    transition: 0.4s ease-out all;
+}
+
+.button2:hover span,
+.button2:focus span {
+    color: black;
+}
+
+.button2::before,
+.button2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transition: 0.3s ease-out all;
+    background: #73DED1;
+}
+
+.button2::before {
+    left: -50%;
+}
+
+.button2::after {
+    right: -50%;
+ }
+
+ .button2:hover::before,
+ .button2:focus::before {
+    left: 0;
+}
+
+.button2:hover::after,
+.button2:focus::after {
+    right: 0%;
+}
+
+.author {
+    width: 100%;
+    text-align: center;
+}
