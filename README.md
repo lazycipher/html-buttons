@@ -6,13 +6,13 @@ Aim is to have a collections of buttons of different designs.
 ### What you need to do ?
 
 * Create a Folder with your name
-* Add a html file with multiple buttons having different designes. **Be Creative**
+* Add a html file with multiple buttons having different designs. **Be Creative**
 
 ### How do I do that ?
 
 1. Fork this Repo
 2. Create a Directory with your **Username**
-3. Create a HTML file in that directory with **Multiple Buttons with diffetent styles** (Min 2)
+3. Create a HTML file in that directory with **Multiple Buttons with different styles** (Min 2)
 4. Create a Pull Request
 
 ### HTML File Rules
