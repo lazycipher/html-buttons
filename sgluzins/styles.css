@@ -1,18 +1,24 @@
 body {
     background-color: #B2B2B2;
     text-align: center;
+    font-family: Helvetica, sans-serif;
+    color: #FFF;
 }
 h1 {
-    color: #FFF;
-    font-family: Helvetica, sans-serif;
     font-weight: 100;
 }
 button {
     width: 50px;
     height: 50px;
     margin: 20px;
-    color: #B8A;
+    color: #FFB6C1;
     border-radius: 20px;
+}
+.diffButton {
+    background-color: #FFB6C1;
+    color: #FFF;
+    border-radius: 0;
+    width: 100px;
 }
 i {
     font-size: 32px;
