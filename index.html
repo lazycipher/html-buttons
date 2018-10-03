@@ -15,8 +15,7 @@
           body, #mainContent { margin-top: 0; background: white; box-shadow: none; }
           body { border-top: 16px solid #ffa100; }
           #logo{
-            width: 320px;
-            
+            width: 320px;      
           }
         }
         .someGap{
@@ -37,6 +36,30 @@
         .center{
             text-align: center;
         }
+        .smallText a{
+          font-size: 10px;
+          size: 10px;
+        }
+        .btnGithub{
+          color: #2c3e50;
+          line-height: 1em;
+          color: inherit;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 4px;
+          background-color: #fff;
+          background-color: rgba(255,255,255, 0);
+          box-shadow: 0 0 0 0 #2c3e50 inset, 0.3em 0.2em 0 0 #bbb;
+          border: 0.2em solid #2c3e50;
+          padding: 0.8em;
+          text-align: center;
+          transition: 0.25s box-shadow, 0.25s transform;
+        }
+        .btnGithub:hover{
+          box-shadow: 0 4em 0 0 #a0a2a5 inset, 0em 0em 0 0 #bbb;
+          transform: translate(0.3em, 0.2em);
+          color: #ECEFF1;
+        }   
     </style>
   </head>
 <body>
@@ -50,15 +73,17 @@
     <div class="githubButtons">
       <!-- Follow RaidAndFade -->
       <a class="github-button" href="https://github.com/lazycipher" data-size="large" data-show-count="true" aria-label="Follow @lazycipher on GitHub">Follow @lazycipher</a>
+      <a class="github-button" href="https://github.com/lazycipher" data-size="large">Follow @lazycipher</a>
       <!-- Fork Repo. -->
       &nbsp;
       <a class="github-button" href="https://github.com/lazycipher/html-buttons/blob/master/README.md" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork RaidAndFade/hacktoberfest2018 on GitHub">Join as a Contributer</a>
     </div>
     <hr>
     <!-- User Files | Contribution File's Links -->
-    <ol id="d">
-        <li>Loading...</li>
-    </ol>
+    <div>
+      <table id="d" style="width:100%; text-align: left;">
+      </table>
+    </div>
     <!-- Content Footer -->
     <hr>
     <div class="contentFooter">
@@ -73,15 +98,13 @@
 <script>
 function setList(l){
   var h = document.getElementById("d");
-  h.innerHTML = "&nbsp;&nbsp;<b>Contributers List</b> <br/><br />";
+  h.innerHTML = "<tr><th>Contributors</th><th>Design Link</th><th>Github Profile</th></tr>";
   for(var x of l){
     if(x.type=='dir'){
-        h.innerHTML += "<li><a href=\""+x.path+"/index.html\">"+x.name+"</a></li>";
-    }   
-     
+        h.innerHTML += `<tr><td><p style="font-weight:bold;font-size:20px;">${x.name}</p></td><td><a class="btnGithub" style="font-size:15px;" href="${x.path}/index.html">View Button</a></td><td><a class="btnGithub" style="font-size:15px;" href="https://github.com/${x.name}">View Profile</a></td></tr>`;
+    }       
   }
 }
-
 const gitapiurl = "https://api.github.com/repos/lazycipher/html-buttons/contents";
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() {
