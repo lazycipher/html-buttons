@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:700);
+html, body{background-image: url("https://vignette.wikia.nocookie.net/ppc/images/0/0e/Matrix.gif");  font-family : Roboto; height: 100%; width: 100%; margin: 0;}
+
+.centered {
+  height: 200px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.buttonRed {
+  background: #ff0000;
+  background-image: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 51%);
+  margin : 20px auto;
+  width : 300px;
+  height : 50px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 25px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.buttonBlue {
+  background: #0000FF;
+  background-image: linear-gradient(270deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 51%);
+  margin : 20px auto;
+  width : 300px;
+  height : 50px;
+  overflow: hidden;
+  text-align : center;
+  transition : .2s;
+  cursor : pointer;
+  border-radius: 25px;
+  box-shadow: 0px 1px 2px rgba(0,0,0,.2);
+}
+.btn {
+  position : relative;
+  width : 300px;
+  height : 100px;
+  margin-top: -100px;
+  padding-top: 2px;
+  background : #FFFFFF;
+  transition : .3s;
+}
+.btnText {
+  transition : .3s;
+  margin-top : 63px;
+  margin-right : 0px;
+}
+.Left {
+  left : -350px;
+}
+.Right {
+  right : -350px;
+}
+.Red {
+  color : red;
+}
+.White {
+  color : white;
+}
+.Blue {
+  color : blue;
+}
+.buttonRed:hover .btn{ /*When hovering over .button change .btnTwo*/
+  left: 0px;
+}
+.buttonRed:hover .btnText{ /*When hovering over .button change .btnText*/
+  margin-left : 0px;
+}
+.buttonBlue:hover .btn{ /*When hovering over .button change .btnTwo*/
+  right: 0px;
+}
+.buttonBlue:hover .btnTextThree{ /*When hovering over .button change .btnText*/
+  margin-left : 0px;
+}
+.buttonRed:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.5);
+}
+.buttonBlue:active { /*Clicked and held*/
+  box-shadow: 0px 5px 6px rgba(0,0,0,0.5);
+}
