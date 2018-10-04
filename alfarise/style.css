@@ -1,0 +1,30 @@
+.btn {
+  width: 136px;
+  height: 42px;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  border: 0;
+  color: white;
+  margin: 10px 10px;
+}
+
+.btn:hover {
+  box-shadow: 5px 5px 2px lightgrey;
+}
+
+.snd {
+  background-color: #0086D9;
+}
+
+.inf {
+  background-color: #6ACC00;
+  border-radius: 10px;
+}
+
+.dlt {
+  width: 42px;
+  height: 42px;
+  background-color: #E01B00;
+  border-radius: 50px;
+}
