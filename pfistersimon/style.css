@@ -1,0 +1,78 @@
+/* Baisic Layout */
+
+* {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Layout Style */
+
+body {
+	background-color: #ffbc7a;
+	text-align: center;
+}
+
+h1 {
+	margin: 20px 0 50px;
+}
+
+#btn-01 {
+	margin-bottom: 50px;
+	width: 50px;
+	height: 50px;
+	background-color: #00ffbb;
+	border-radius: 3px;
+
+	
+}
+
+#btn-01:hover {
+	background-color: #ff0044;
+	font-weight: bold;
+}
+
+#btn-02 {
+	margin-bottom: 50px;
+	width: 100px;
+	height: 40px;
+	background-color: #000;
+	color: #fff;
+	font-weight: bold;
+ 	box-shadow: 3px 3px 3px 2px #fff; 
+}
+
+#btn-02:active {
+	box-shadow: 3px 3px 3px 2px #f9f761;
+
+}
+
+#btn-03 {
+
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: blue;
+	color: #fff;
+}
+
+
+#btn-03:hover {
+	width: 50px;
+	height: 50px;
+	border-radius: 25%;
+	background-color: lightblue;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
