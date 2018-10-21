@@ -1,0 +1,82 @@
+body {
+  background: #dce1df;
+  transition: all 0.15s ease-in;
+}
+div.buttons {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+  text-align: center;
+  width: 100%;
+}
+a {
+  border: 1px solid #586660;
+  border-radius: 2px;
+  color: #586660;
+  display: inline-block;
+  font-family: arial;
+  font-size: 12px;
+  margin: 4px 2px;
+  padding: 6px 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  transition: all 0.15s ease-in;
+}
+a:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 4px 8px #acacac;
+  color: #6f827a;
+  -webkit-transform: translate3d(0, -4px, 0);
+          transform: translate3d(0, -4px, 0);
+}
+body.orange {
+  background: #ffad58;
+}
+body.orange a {
+  border: 1px solid #582d00;
+  color: #582d00;
+}
+body.orange a:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 4px 8px #d97a18;
+  color: #8b4700;
+}
+body.blue {
+  background: #49f3ff;
+}
+body.blue a {
+  border: 1px solid #004449;
+  color: #004449;
+}
+body.blue a:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 4px 8px #17bfcb;
+  color: #00747c;
+}
+body.green {
+  background: #91ffc2;
+}
+body.green a {
+  border: 1px solid #009141;
+  color: #009141;
+}
+body.green a:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 4px 8px #40ea8c;
+  color: #00c457;
+}
+body.white {
+  background: #fff;
+}
+body.white a {
+  border: 1px solid #808080;
+  color: #808080;
+}
+body.white a:hover {
+  border: 1px solid rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 4px 8px #cccccc;
+  color: #999999;
+}
