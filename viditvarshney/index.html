@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Buttons Design</title>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <style>
+            h1 {
+                color: darkmagenta;
+                font-weight: bold;
+                margin: 10px 500px;
+                text-decoration-line: underline;
+            }
+            body {
+                background-color: lightgreen;
+            }
+            p {
+                font-size: 30px;
+                font-weight: bold;
+                border: 2px dashed red;
+                width: 320px;
+                margin-left: 450px;
+            }
+            .button {
+                width: 150px;
+                height: 50px;
+                font-size: 20px;
+                font-weight: bold; 
+            }
+            .button1 {
+                color: blue;
+                background-color: burlywood;
+                border: 2px solid darkgoldenrod;
+                border-radius: 5px;
+                
+            }
+            .button1:hover {
+                color: white;
+                background-color: brown;
+                opacity: 0.5;
+                cursor: pointer
+            }
+            .button2 {
+                background-color: yellowgreen;
+                border: none;
+                border: 2px solid darkgreen;
+                box-shadow: 0px 10px darkgreen; 
+                border-bottom-left-radius: 22px;
+                border-top-right-radius: 22px;
+                text-align: center;
+            }
+            .button2:hover {
+                cursor: pointer;
+                border: 2px solid deeppink;
+                border-top-left-radius: 22px;
+                border-bottom-right-radius: 22px;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 0;
+                box-shadow:10px 10px 20px 5px pink inset;
+                
+            }
+            
+        </style>
+
+    </head>
+    <body>
+
+        <!--Heading-->
+        <h1>HTML Buttons</h1>
+
+        <p>First Button Design</p><br>
+    
+
+        <button id="but1" class="button button1"><span>First Button</span></button>
+    
+
+        <p>Second Button Design</p><br>
+
+        <button id="but2" class="button button2"><span>Second Button</span></button>
+
+    </body>
+
+    <script type="text/javascript">
+        
+        document.getElementById("but1").onclick = function() {
+            document.getElementById("but1").innerHTML="Clicked"
+        } 
+        
+        document.getElementById("but2").onclick = function() {
+            document.getElementById("but2").innerHTML = "Pressed";
+
+        }
+    
+    
+    
+    </script>
+
+
+
+
+
+
+
+
+
+</html>
